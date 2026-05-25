@@ -1,8 +1,9 @@
+import {Link} from "react-router-dom";
 
 const HeaderComponent = ()=>{
     return (
         <>
-            <nav className="navbar navbar-expand-lg bg-light">
+            <nav className="navbar navbar-expand-sm bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">Navbar</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -16,7 +17,7 @@ const HeaderComponent = ()=>{
                                 <a className="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Link</a>
+                                <Link className="nav-link" to="/student">Student management</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
